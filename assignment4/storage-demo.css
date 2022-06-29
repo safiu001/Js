@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-around;
+    font-family: Tahoma;
+}
+
+.item{
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 12px;
+    font-size: 21px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 32px;
+}
+
+.count-wrap > span{
+    display: block;
+    font-size: 52px;
+    margin: 30px 20%;
+}
