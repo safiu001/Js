@@ -61,7 +61,7 @@ function drop(ev){
     if(selectedTable.id == ""){
         selectedTable = selectedTable.parentElement;
     }
-    
+
     // create the new item and insert
     let localData = JSON.parse(localStorage.getItem("items"));
     let price = localData[data][1];
@@ -71,11 +71,11 @@ function drop(ev){
     let totalItems = selectedTable.querySelector(".total-items");
     let tempStore = JSON.parse(sessionStorage.getItem(selectedTable.id));
     if(tempStore == null || Object.keys(tempStore).length == 0){
+        let items = {};
+        items[name] = 1;
         tempStore = {
             "total": price,
-            "items": {
-                name: 1
-            },
+            "items": items,
             "count": 1
         };
     }else{
